@@ -11,10 +11,110 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: white;
+}
+
+.container {
+    width: 90%;
+    min-height: 10rem;
+    margin: 0 auto;
+    border: 2px dashed red;
+}
+
+.debug a {
+    min-width: 50px;
+    height: 20px;
+    background-color: rgb(62, 75, 49);
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
 /* HEADER */
 
+header {
+    background-color: rgb(72, 145, 248);
+}
+
+.debug header .container * {
+    border: 1px solid orange;
+}
+
+header .container {
+    min-height: 3em;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.debug header .container nav {
+    display: flex;
+    align-items: center;
+}
+
+.header.header-left {
+    justify-content: flex-start;
+}
+
+.header.header-right {
+    justify-content: flex-end;
+}
 
 /* MAIN */
 
+.main-section {
+    width: 100%;
+}
+
+.container.section_1 {
+    min-height: 30rem;
+}
+
+.my-row {
+    width: 100%;
+    min-height: 50rem;
+    border: red solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.my-cards {
+    min-height: 30rem;
+    width: 100%;
+    border: 2px solid rgb(185, 161, 161);
+    border-radius: 15px;
+    margin: 10px 0;
+    padding-top: 1rem ;
+    background-color: rgb(98, 129, 68);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.my-cards-big {
+}
+
+.my-cards-big img {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+}
+
+
 
 /* FOOTER */
+
+
+
+/* RESPONSIVE */
+
+@media screen and (width:480px) {
+    .my-cards {
+        flex-direction: column;
+    }
+}
