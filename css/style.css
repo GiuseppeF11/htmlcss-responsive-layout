@@ -83,7 +83,7 @@ header .container {
 }
 
 .my-cards {
-    min-height: 30rem;
+    min-height: 20rem;
     width: 100%;
     border: 2px solid rgb(185, 161, 161);
     border-radius: 15px;
@@ -93,10 +93,15 @@ header .container {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .my-cards-big {
+    justify-content: space-between;
+}
+
+.my-cards * {
+    margin-top: 20px;
 }
 
 .my-cards-big img {
