@@ -65,8 +65,14 @@ h2, h3 {
     margin: 20px 0;
 }
 
-p {
-    font-size: large;
+.white-violet_button {
+    background-color: white;
+    color: #9593E6;
+}
+
+.violet-white_button {
+    background-color: #9593E6;
+    color: white;
 }
 
 /* MAIN */
@@ -122,7 +128,7 @@ p {
 
 /* SEZIONE 2 */
 
-.main-section.section_2 {
+.main-section.section_2 , .main-section.section_4 {
     background-color: #9593E6;
     color: white;
 }
@@ -137,7 +143,6 @@ p {
 
 .bottom-section {
     border-radius: 50px;
-    text-align: center;
     padding: 20px 20px;
     margin: 20px 0;
 }
@@ -156,28 +161,34 @@ p {
     color: black;
 }
 
-.round-button {
-    padding: 5px 10px;
-    border-radius: 50%;
-    background-color: #9593E6;
-    color: black;
+.white-violet_button {
+    background-color: white;
+    color: #9593E6;
 }
+
+.z
 
 /* SEZIONE 3 */
 
 .main-section.section_3 {
     background-color: white;
-    text-align: center;
 }
 
 .main-section.section_3 h2 {
     color: #9593E6;
 }
 
+.top-section.top-section_3 {
+    text-align: center;
+}
+
 .bottom-section.bottom-section_testimonial{
     background-color: #9593E6;
     color: white;
     margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .testimonial img{
@@ -187,17 +198,44 @@ p {
     border-radius: 50%;
 }
 
-.fa-quote-left , .fa-quote-right {
-    font-size: 30px;
+/* QUARTA SEZIONE */
+
+.main-section.section_4 h2{
+    text-align: center;
 }
 
+.bottom-section_benefits {
+    background-color: white;
+    color: #9593E6;
+    flex-direction: column;
+}
 
+.container.section_4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-section_benefits {
+    display: flex;
+    align-items: flex-start;
+}
+
+.bottom-section_benefits a {
+    color: white;
+    border-radius: 25px;
+    min-width: 50px;
+}
+
+.n-benefit {
+    font-size: 40px;
+}
+
+.bottom-section.bottom-section_benefits a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+}
 /* FOOTER */
 
 /* RESPONSIVE */
-
-@media screen and (width:480px) {
-    .my-cards {
-        flex-direction: column;
-    }
-}
