@@ -53,6 +53,14 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+.violet-white_button {
+    background-color: #9593E6;
+    color: white;
+    padding: 5px 50px;
+    border-radius: 20px;
+    letter-spacing: 3px;
+}
 /* HEADER */
 
 header {
@@ -83,6 +91,10 @@ header .container {
     justify-content: flex-end;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 3px;
+}
+
 /* MAIN */
 
 .main-section {
@@ -103,6 +115,7 @@ header .container {
     border: red solid 1px;
     display: flex;
     flex-wrap: wrap ;
+    justify-content: center;
 }
 
 .my-col {
@@ -150,7 +163,7 @@ header .container {
 .my-col-3 .my-cards-text p, .my-col-4 .my-cards-text p,
 .my-col-5 .my-cards-text p {
     color: #4F6170;
-    line-height: 1.6;
+    line-height: 2;
 }
 
 .my-col-1 .my-cards-text i, .my-col-2 .my-cards-text i,
@@ -188,7 +201,96 @@ header .container {
     color: black;
 }
 
+/*  SECTION 3  */
 
+.main-section.section_3, .main-section.section_3 .my-cards-big {
+    background-color: white;
+}
+
+.main-section.section_3 .my-col-1 .my-cards-big-text {
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.main-section.section_3 .my-col-2 .my-cards-text ,
+.main-section.section_3 .my-col-2 .my-cards-text p {
+    color: white;
+}
+
+.main-section.section_3 .my-cards-big-text h3 {
+    color: #9593E6;
+}
+
+.main-section.section_3 .my-cards {
+    background-color: #9593E6;
+}
+
+.main-section.section_3 .my-col-2 .my-cards-big-img {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+}
+
+.main-section.section_3 .my-col-2 .my-cards-big-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.main-section.section_3 .my-cards-text i {
+    font-size: medium;
+}
+
+.testimonial-name {
+    font-weight: 900;
+    font-size: larger;
+}
+
+/* SECTION 4 */
+
+.main-section.section_4 {
+    background-color:#9593E6;
+}
+
+.main-section.section_4 .my-col-1 {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-section.section_4 .my-cards-big{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+
+.main-section.section_4 .my-cards-big-text {
+    margin: 0;
+}
+
+.main-section.section_4 .my-col-2 .my-cards {
+    background-color: white;
+}
+
+.main-section.section_4 .my-col-2 .my-cards .my-cards-text,
+.main-section.section_4 .my-col-2 .my-cards .my-cards-text p {
+    align-items: flex-start;
+    text-align: left;
+    color:#9593E6;
+}
+
+.main-section.section_4 .my-col-2 .my-cards .my-cards-text p {
+    color: #4F6170;
+}
+
+.n-benefit {
+    font-size: 40px;
+    font-weight: 900;
+}
 
 /* FOOTER */
 
