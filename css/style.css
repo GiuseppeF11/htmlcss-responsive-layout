@@ -30,7 +30,7 @@ img {
 
 
 .button {
-    padding: 10px 50px;
+    padding: 10px 10px;
 }
 
 .white-violet_button {
@@ -50,12 +50,14 @@ img {
 .violet-black_button {
     background-color: #9593E6;
     color: black;
+    padding: 30px;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 10px;
 }
 
 .violet-white_button {
@@ -64,6 +66,16 @@ img {
     padding: 5px 50px;
     border-radius: 20px;
     letter-spacing: 3px;
+}
+
+.white-black_button {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+.white_a {
+    color: white;
 }
 
 
@@ -94,8 +106,6 @@ header {
 header .container {
     min-height: 3em;
     padding: 5px 0;
-    display: flex;
-    justify-content: space-between;
 }
 
 header .container nav {
@@ -103,16 +113,14 @@ header .container nav {
     align-items: center;
 }
 
-header .container nav a {
-    color: white;
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
 }
 
-.header.header-left {
-    justify-content: flex-start;
-}
-
-.header.header-right {
-    justify-content: flex-end;
+.header.header-right .header-link  {
+    display: none;
 }
 
 
@@ -138,26 +146,22 @@ header .container nav a {
     display: flex;
     flex-wrap: wrap ;
     justify-content: center;
+    margin: 0 -10px;
 }
 
 .my-col {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 10px 0;
 }
 
 .my-cards-big, .my-cards {
     width: 100%;
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: #B5DDFF;
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 0 20px;
-}
-
-.my-cards-big {
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .my-cards {
@@ -167,7 +171,6 @@ header .container nav a {
 .my-cards-text, .my-cards-big-text {
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
 }
 
 .my-cards-text {
@@ -194,13 +197,14 @@ header .container nav a {
 .my-col-3 .my-cards-text p, .my-col-4 .my-cards-text p,
 .my-col-5 .my-cards-text p {
     color: #4F6170;
-    line-height: 2;
+    line-height: 1.4;
+    padding: 10px;
 }
 
 .my-col-1 .my-cards-text i, .my-col-2 .my-cards-text i,
 .my-col-3 .my-cards-text i, .my-col-4 .my-cards-text i,
 .my-col-5 .my-cards-text i {
-    font-size: 80px;
+    font-size: 30px;
 }
 
 .my-cards-text * , .my-cards-big-text * {
@@ -252,6 +256,7 @@ header .container nav a {
 .main-section.section_3 .my-cards {
     background-color: #9593E6;
     width: 100%;
+    margin: 20px 0;
 }
 
 .main-section.section_3 .my-col-2 .my-cards-big-img {
@@ -302,6 +307,7 @@ header .container nav a {
 
 .main-section.section_4 .my-col-2 .my-cards {
     background-color: white;
+    margin: 20px 0;
 }
 
 .main-section.section_4 .my-col-2 .my-cards .my-cards-text,
@@ -430,7 +436,7 @@ footer a {
 
 /* HEADER TABLET */
 
-    /* SECTION 2 TABLET */
+    /* SECTION 1 TABLET */
     .main-section {
         padding: 50px 0;
     }
@@ -485,6 +491,7 @@ footer a {
         align-items: center;
         border-radius: 50% ;
         margin-right: 50px;
+        flex-shrink: 0;
     }
 
     .main-section.section_3 .testimonial {
@@ -498,7 +505,7 @@ footer a {
     /* SECTION 4 TABLET */
 
     .main-section.section_4 h3 {
-        font-size: 30px;
+        font-size: 1.5rem;
     }
 
     .main-section.section_4 .my-row {
@@ -540,5 +547,96 @@ footer a {
 
 @media screen and (min-width:768px) {
 
+    .container {
+        width: 60%;
+    }
+
     /* HEADER DESKTOP  */
+
+    .header.header-left a {
+        width: 80px;
+    }
+
+    .header-right .hamburger {
+        display: none;
+    }
+
+    .header.header-right .header-link  {
+        display: block;
+        padding: 0px 10px;
+    }
+
+    /* SECTION 1 */
+
+        /* SECTION 1 DESKTOP */
+
+        .main-section {
+            padding: 50px 0;
+        }
+       .main-section.section_1 .my-row {
+            display: flex;
+            justify-content: left;
+        }
+    
+        .main-section.section_1 .my-col {
+            width: calc((100%/3));
+            padding: 10px;
+        }
+    
+        .main-section.section_1 .my-col-1 {
+            width: calc((100%/3) * 2);
+        }
+    
+        .main-section.section_1 .my-col-1 .my-cards-big {
+            flex-direction: row;
+        }
+
+        .main-section.section_1 .my-col-1 .my-cards-big-text {
+            width: 50%;
+        }
+
+        .main-section.section_1 .my-col-1 .my-cards-big-img {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+        }
+    
+        .main-section.section_1 .my-col-1 .my-cards-big-img img {
+            width: 80%;
+        }
+
+        .main-section.section_2 .my-col-1{
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .main-section.section_2 .my-col-2{
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+
+        }
+
+        .main-section.section_2 .my-col-2 .my-cards-big-img {
+            width: 50%;
+        }
+
+        .main-section.section_2 .my-row {
+            display: flex;
+            align-items: end;
+        }
+
+        .main-section.section_2 .my-col-2 p {
+            margin: 0;
+        }
+
+
+        /* SECTION 4 */
+
+        .main-section.section_4 .my-col-2 {
+            width: calc((100% / 3));
+            padding: 5px 5px;
+        }
 }
